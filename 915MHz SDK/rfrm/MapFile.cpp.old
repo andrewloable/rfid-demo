@@ -1,0 +1,10 @@
+#include "StdAfx.h"
+#include "MapFile.h"
+
+CMapFile::CMapFile(void)
+{
+}
+
+CMapFile::~CMapFile(void)
+{
+}

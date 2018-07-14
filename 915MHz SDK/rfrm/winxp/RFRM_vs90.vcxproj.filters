@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Control">
+      <UniqueIdentifier>{2c76cbf0-1554-4dae-a10b-1470d4c9567c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Control\Header Files">
+      <UniqueIdentifier>{73407a0d-972c-4e2a-ac7a-f375bce307bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Control\Source Files">
+      <UniqueIdentifier>{712c3926-930a-433c-963e-c714006bf514}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\AlgorithmSetPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AntennaEditDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AntennaSetPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Buffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CountDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EngineeringSetPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FirmwareUpdate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FirmwareUpdateOptionDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FirmwareUpdateStatusDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FrequencyBand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FrequencyBandList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FrequencyBandPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GeneralSetPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intel_list.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intel_stack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\intel_utility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\InterfaceDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\KillTagAccessDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LockTagAccessDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mapfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Mapping.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MemMapControl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MessageView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OperationMode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PostSingulationSetPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ReaderSetSheet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ReadTagAccessDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\RFIDRadio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\RFIDRadioManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\RFRM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\RFRMDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\RFRMView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SelectCriteriaSetPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ServerIPDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SocketClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SpinButtonCtrlEx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TagInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TagPtrList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ToolBarEx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WriteTagAccessDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SplitterWndEx.cpp">
+      <Filter>Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AThread.cpp">
+      <Filter>Control\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ComboInListView.cpp">
+      <Filter>Control\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FlatSplitterWnd.cpp">
+      <Filter>Control\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HeaderCtrlEx.cpp">
+      <Filter>Control\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IconPropertyPage.cpp">
+      <Filter>Control\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\IconPropertySheet.cpp">
+      <Filter>Control\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ListCtrlEx.cpp">
+      <Filter>Control\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ListViewEx.cpp">
+      <Filter>Control\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MenuEx.cpp">
+      <Filter>Control\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SortClass.cpp">
+      <Filter>Control\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SplashWnd.cpp">
+      <Filter>Control\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\StatusBarEx.cpp">
+      <Filter>Control\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThemeHelperEx.cpp">
+      <Filter>Control\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WaveBox.cpp">
+      <Filter>Control\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\AlgorithmSetPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AntennaEditDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AntennaSetPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CountDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EngineeringSetPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FirmwareUpdate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FirmwareUpdateOptionDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FirmwareUpdateStatusDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FrequencyBand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FrequencyBandList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FrequencyBandPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GeneralSetPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\intel_list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\intel_stack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\intel_utility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\InterfaceDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\KillTagAccessDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LockTagAccessDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mapfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Mapping.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemMapControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MessageView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\OperationMode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PostSingulationSetPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ReaderSetSheet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ReadTagAccessDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RFIDRadio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RFIDRadioManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RFRM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RFRMDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RFRMView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SelectCriteriaSetPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ServerIPDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SocketClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SpinButtonCtrlEx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TagInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TagPtrList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ToolBarEx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VersionInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WriteTagAccessDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SplitterWndEx.h">
+      <Filter>Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AThread.h">
+      <Filter>Control\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ComboInListView.h">
+      <Filter>Control\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FlatSplitterWnd.h">
+      <Filter>Control\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HeaderCtrlEx.h">
+      <Filter>Control\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IconPropertyPage.h">
+      <Filter>Control\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IconPropertySheet.h">
+      <Filter>Control\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ListCtrlEx.h">
+      <Filter>Control\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ListViewEx.h">
+      <Filter>Control\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MenuEx.h">
+      <Filter>Control\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SortClass.h">
+      <Filter>Control\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SplashWnd.h">
+      <Filter>Control\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StatusBarEx.h">
+      <Filter>Control\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThemeHelperEx.h">
+      <Filter>Control\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\WaveBox.h">
+      <Filter>Control\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\res\bitmap8.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\res\bmp00001.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\res\Cmdbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Cmdbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\res\Cmdbar_color.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\res\Cmdbar_color_32.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\res\Cmdbar_gray.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\res\Cmdbar_gray_32.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\res\folders.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\res\ImageList.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\ImageList.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\res\RFRM.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\RFRM.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\res\RFRMDoc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\RFRMDoc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\splash_wnd.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\res\splash_wnd.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\res\Tab_icon 108x36.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\res\Tab_icon 32x16.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\res\Tab_icon 48x16.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\res\Tab_icon 72x36.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\res\Tag_icon 16x16.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Tag_icon 16x16.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Tag_icon 24x24.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\res\Tag_icon 24x24.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\res\Tag_icon 36x36.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Tag_icon 36x36.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Tag_icon 48x48.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\res\tagaccess_color_32.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\res\tagaccess_gray_32.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\res\toolbar1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\res\toolbar1_color_16.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\res\toolbar1_color_32.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\res\toolbar1_gray_16.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\res\toolbar1_gray_32.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\RFRM.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\RFRM.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\ReadMe.txt" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,11 @@
+E:\Work\SDK\New Passive\CSharp(VS2010)\New Passive(CSharp)\New Passive\bin\Debug\新无源读卡器演示程序(New Passive Demo) - CSharp.exe.config
+E:\Work\SDK\New Passive\CSharp(VS2010)\New Passive(CSharp)\New Passive(CSharp)\bin\Debug\新无源读卡器演示程序(New Passive Demo) - CSharp.exe.config
+E:\Reader\(SDK)\VS2010\New Passive(CSharp)\bin\Debug\新无源读卡器演示程序(New Passive Demo) - CSharp.exe.config
+E:\Reader\(SDK)\VS2010\New Passive(CSharp)\bin\Debug\新无源读卡器演示程序(New Passive Demo) - CSharp.exe
+E:\Reader\(SDK)\VS2010\New Passive(CSharp)\bin\Debug\新无源读卡器演示程序(New Passive Demo) - CSharp.pdb
+E:\Reader\(SDK)\VS2010\New Passive(CSharp)\obj\x86\Debug\New Passive(CSharp).csprojResolveAssemblyReference.cache
+E:\Reader\(SDK)\VS2010\New Passive(CSharp)\obj\x86\Debug\NewPassive.frmMain.resources
+E:\Reader\(SDK)\VS2010\New Passive(CSharp)\obj\x86\Debug\NewPassive.Properties.Resources.resources
+E:\Reader\(SDK)\VS2010\New Passive(CSharp)\obj\x86\Debug\New Passive(CSharp).csproj.GenerateResource.Cache
+E:\Reader\(SDK)\VS2010\New Passive(CSharp)\obj\x86\Debug\新无源读卡器演示程序(New Passive Demo) - CSharp.exe
+E:\Reader\(SDK)\VS2010\New Passive(CSharp)\obj\x86\Debug\新无源读卡器演示程序(New Passive Demo) - CSharp.pdb

@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{79FF4A46-64B8-404D-8E96-F7A5A906ABD8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Aosid</RootNamespace>
+    <AssemblyName>Passive Demo</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSioConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSioConfig.Designer.cs">
+      <DependentUpon>frmSioConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWait.Designer.cs">
+      <DependentUpon>frmWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passive\ucPBaseSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Passive\ucPBaseSettings.Designer.cs">
+      <DependentUpon>ucPBaseSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passive\ucPQuickWriteEPC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Passive\ucPQuickWriteEPC.Designer.cs">
+      <DependentUpon>ucPQuickWriteEPC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passive\ucPReadDemo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Passive\ucPReadDemo.Designer.cs">
+      <DependentUpon>ucPReadDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passive\ucPSeniorSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Passive\ucPSeniorSettings.Designer.cs">
+      <DependentUpon>ucPSeniorSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passive\ucPWifiSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Passive\ucPWifiSettings.Designer.cs">
+      <DependentUpon>ucPWifiSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passive\ucPWriteEPC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Passive\ucPWriteEPC.Designer.cs">
+      <DependentUpon>ucPWriteEPC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passive\ucPWriteISO.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Passive\ucPWriteISO.Designer.cs">
+      <DependentUpon>ucPWriteISO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemPub.cs" />
+    <Compile Include="ucPassive.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPassive.Designer.cs">
+      <DependentUpon>ucPassive.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSioConfig.resx">
+      <DependentUpon>frmSioConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWait.resx">
+      <DependentUpon>frmWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passive\ucPBaseSettings.resx">
+      <DependentUpon>ucPBaseSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passive\ucPQuickWriteEPC.resx">
+      <DependentUpon>ucPQuickWriteEPC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passive\ucPReadDemo.resx">
+      <DependentUpon>ucPReadDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passive\ucPSeniorSettings.resx">
+      <DependentUpon>ucPSeniorSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passive\ucPWifiSettings.resx">
+      <DependentUpon>ucPWifiSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passive\ucPWriteEPC.resx">
+      <DependentUpon>ucPWriteEPC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passive\ucPWriteISO.resx">
+      <DependentUpon>ucPWriteISO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPassive.resx">
+      <DependentUpon>ucPassive.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\ADSDK\Default\ADSDK.Bases\ADSDK.Bases.csproj">
+      <Project>{87ad9359-1e2b-4dcc-9ec9-f06c6d6eabd7}</Project>
+      <Name>ADSDK.Bases</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ADSDK\Default\ADSDK.Sets\ADSDK.Sets.csproj">
+      <Project>{9c26570d-4bb7-4aa0-9867-26372399a0f5}</Project>
+      <Name>ADSDK.Sets</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ADSDK\Device\ADSDK.Device.Reader.Controls\ADSDK.Device.Reader.Controls.csproj">
+      <Project>{7cba44fe-449f-4e98-bdfb-29880e89c284}</Project>
+      <Name>ADSDK.Device.Reader.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ADSDK\Device\ADSDK.Device.Reader\ADSDK.Device.Reader.csproj">
+      <Project>{b8a571a8-3147-42bc-b6c2-31fbab276f24}</Project>
+      <Name>ADSDK.Device.Reader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ADSDK\Device\ADSDK.Device\ADSDK.Device.csproj">
+      <Project>{3edf9a50-c4c9-4108-a2b0-c88188815726}</Project>
+      <Name>ADSDK.Device</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>@echo off
+REM Remove files generated by compiler in this directory
+REM and all subdirectories.
+
+echo Removing *.pdb files...
+del *.pdb /f /q /s
+echo.
+
+rd Objects /S /Q
+
+echo Done.</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1355 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\RFRM.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\RFRM.ico"
+IDR_RFRMTYPE            ICON                    "res\\RFRMDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Cmdbar.bmp"
+IDB_BITMAP_LIST         BITMAP                  "res\\ImageList.bmp"
+IDB_BITMAP_24           BITMAP                  "res\\Tag_icon 24x24.bmp"
+IDB_BITMAP_16           BITMAP                  "res\\Tag_icon 16x16.bmp"
+IDB_BITMAP_SPLASH       BITMAP                  "res\\splash_wnd.bmp"
+IDB_BITMAP_36           BITMAP                  "res\\Tag_icon 36x36.bmp"
+IDB_FOLDERS             BITMAP                  "res\\folders.bmp"
+IDB_BITMAP_TAB_32       BITMAP                  "res\\Tab_icon 108x36.bmp"
+IDB_BITMAP_TAB_16       BITMAP                  "res\\Tab_icon 48x16.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_RFID_CONNECTION
+    BUTTON      ID_RFID_DISCONNECTION
+    SEPARATOR
+    BUTTON      ID_RFID_RESET
+    SEPARATOR
+    BUTTON      ID_RFID_READER_SET
+    SEPARATOR
+    BUTTON      ID_VIEW_LIST
+    SEPARATOR
+    BUTTON      ID_FILE_EXPORT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Export",                      ID_FILE_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&RFID"
+    BEGIN
+        POPUP "&Power"
+        BEGIN
+            MENUITEM "Power &On/Off",               ID_RFID_POWER_ON_OFF, CHECKED
+            MENUITEM "&Reset",                      ID_RFID_RESET
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Interface Con&figuration...", ID_RFID_INTERFACECONFIGURATION
+        POPUP "&Firmware"
+        BEGIN
+            MENUITEM "Update &Option",              ID_FIRMWARE_UPDATEOPTION
+            MENUITEM "&Update",                     ID_FIRMWARE_UPDATE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Connection",                 ID_RFID_CONNECTION
+        MENUITEM "&Disconnection",              ID_RFID_DISCONNECTION
+        MENUITEM SEPARATOR
+        MENUITEM "Reader &Setting...",          ID_RFID_READER_SET
+        MENUITEM SEPARATOR
+        POPUP "&Inventory"
+        BEGIN
+            MENUITEM "&Inventory",                  ID_RFID_RUN_INVENTORY
+            MENUITEM "Inventory &Once",             ID_RFID_INVENTORY_ONCE
+            MENUITEM SEPARATOR
+            MENUITEM "&Stop Inventory",             ID_RFID_STOP_INVENTORY
+            MENUITEM SEPARATOR
+            POPUP "Tag"
+            BEGIN
+                MENUITEM "&Read\tCtrl+R",               ID_TAG_READ
+                MENUITEM "&Write\tCtrl+W",              ID_TAG_WRITE
+                MENUITEM "&Lock\tCtrl+T",               ID_TAG_LOCK
+                MENUITEM "&Kill\tCtrl+K",               ID_TAG_KILL
+            END
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Server Connec&t",             ID_RFID_SERVERCONNECT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About RFRM...",              ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_LIST MENU 
+BEGIN
+    POPUP "List"
+    BEGIN
+        MENUITEM "Icon",                        ID_LIST_ICON
+        MENUITEM "List",                        ID_LIST_LIST
+        MENUITEM "Detail",                      ID_LIST_REPORT
+        MENUITEM "Small Icon",                  ID_LIST_SMALL_ICON
+    END
+END
+
+IDR_MENU_TAG_ACCESS MENU 
+BEGIN
+    POPUP "Tag"
+    BEGIN
+        MENUITEM "&Read",                       ID_TAG_READ
+        MENUITEM "&Write",                      ID_TAG_WRITE
+        MENUITEM "&Lock",                       ID_TAG_LOCK
+        MENUITEM "&Kill",                       ID_TAG_KILL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,1,4
+ PRODUCTVERSION 1,1,1,4
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "Samsung UHF RFID Reader Manager"
+            VALUE "CompanyName", "Samsung Techwin co., Ltd."
+            VALUE "FileDescription", "RFID Reader Manager"
+            VALUE "FileVersion", "1, 1, 1, 4"
+            VALUE "InternalName", "RFRM.exe"
+            VALUE "LegalCopyright", "Copyright 2007 (c) Samsung Techwin Co., Ltd.  All rights reserved."
+            VALUE "OriginalFilename", "RFRM.exe"
+            VALUE "ProductName", "VLAC"
+            VALUE "ProductVersion", "1, 1, 1, 4"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "RFRM\n\nRFRM\n\n\nRFRM.Document\nRFRM.Document"
+    ID_INDICATOR_COUNT      "Tag Count"
+    ID_INDICATOR_CLEAR      "Clear"
+    IDC_CLEAR_BUTTON        "Clear"
+    ID_INDICATOR_COUNT_EDIT "Tag Count Edit"
+    ID_TAG_TOTAL_READ_COUNT "Total Read"
+    IDS_LC_ID               "Tag ID"
+    IDS_LC_PC               "Tag PC"
+    IDS_LC_TOTALCOUNT       "Total Count"
+    IDS_LC_READCOUNT        "Read Count"
+    IDS_LC_TRIALCOUNT       "Trial Count"
+    IDS_LC_ANTENNA          "Antenna Number"
+    IDS_LC_CHANNEL          "Channel Number"
+    IDS_LC_RSSI             "RSSI"
+    IDS_LC_LNAGAIN          "LNA Gain"
+    IDS_LC_RECEIVETIME      "Receive Time"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "RFRM"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+    ID_INDICATOR_STATUS     "STATUS"
+    ID_INDICATOR_VERSION    "VER"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_SMALLICON       "Display items by using small icons.\nSmall Icons"
+    ID_VIEW_LARGEICON       "Display items by using large icons.\nLarge Icons"
+    ID_VIEW_LIST            "Displays items in a list.\nList"
+    ID_VIEW_DETAILS         "Displays detailed information about each item in the window.\nDetails"
+    ID_VIEW_LINEUP          "Arranges icons in a grid."
+    ID_VIEW_BYNAME          "Sorts the icons alphabetically."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_AUTOARRANGE     "Arrange icons on a grid."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_RFID_READER_SET      "RFID Reader Setting"
+    ID_RFID_RESET           "RFID Reader Reset"
+    ID_RFID_CONNECTION      "RFID Reader Connection"
+    ID_RFID_DISCONNECTION   "RFID Reader Disconnection"
+    ID_RFID_RUN_INVENTORY   "Run Inventory"
+    ID_RFID_STOP_INVENTORY  "Stop Inventory"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_RFID_INVENTORY_ONCE  "Inventory Once"
+    ID_FILE_EXPORT          "Coma Separated Values Export"
+    ID_FIRMWARE_UPDATEOPTION "Firmware Update Option Configuration"
+    ID_FIRMWARE_UPDATE      "Firmware Update"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TAG_READ             "Tag Read"
+    ID_TAG_WRITE            "Tag Write"
+    ID_TAG_LOCK             "Tag Lock"
+    ID_TAG_KILL             "Tag Kill"
+    ID_RFID_STOP_INVENTORY2 "Stop"
+    ID_READ_TOTAL_COUNT     "T.R.M"
+    ID_RFID_INTERFACECONFIGURATION "Interface Configuration"
+    ID_RFID_SERVERCONNECT   "Data Server Connection"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CLEAR_BUTTON        "Clear"
+    IDS_STRING_RFID_STATUS_OK "Success"
+    IDS_STRING_RFID_ERROR_ALREADY_OPEN "Radio is already opened"
+    IDS_STRING_RFID_ERROR_BUFFER_TOO_SMALL "Buffer is too small"
+    IDS_STRING_RFID_ERROR_CURRENTLY_NOT_ALLOWED 
+                            "RFID function is not currently allowed"
+    IDS_STRING_RFID_ERROR_FAILURE "General failure"
+    IDS_STRING_RFID_ERROR_DRIVER_LOAD "Failed to load radio driver"
+    IDS_STRING_RFID_ERROR_DRIVER_MISMATCH 
+                            "Driver version does not match required version"
+    IDS_STRING_RFID_ERROR_EMULATION_MODE 
+                            "Cannot call this function in emulation mode"
+    IDS_STRING_RFID_ERROR_INVALID_ANTENNA "Antenna port is not valid"
+    IDS_STRING_RFID_ERROR_INVALID_HANDLE "Radio handle is not valid"
+    IDS_STRING_RFID_ERROR_INVALID_PARAMETER "Parameter is not valid"
+    IDS_STRING_RFID_ERROR_NO_SUCH_RADIO 
+                            "Radio with supplied ID is not attached to the system"
+    IDS_STRING_RFID_ERROR_NOT_INITIALIZED 
+                            "RFID library has not been previously initialized"
+    IDS_STRING_RFID_ERROR_NOT_SUPPORTED "Function is currently not supported"
+    IDS_STRING_RFID_ERROR_OPERATION_CANCELLED "The operation was cancelled"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_RFID_ERROR_OUT_OF_MEMORY 
+                            "RFID library failed to allocate memory"
+    IDS_STRING_RFID_ERROR_RADIO_BUSY 
+                            "Operation cannot be performed because radio is busy"
+    IDS_STRING_RFID_ERROR_RADIO_FAILURE "The radio module indicated a failure"
+    IDS_STRING_RFID_ERROR_RADIO_NOT_PRESENT 
+                            "The radio has been detached from the system"
+    IDS_STRING_RFID_ERROR_RADIO_NOT_RESPONDING "The radio is not responding"
+    IDS_STRING_RFID_ERROR_NONVOLATILE_INIT_FAILED 
+                            "The radio failed to initialize nonvolatile memory update"
+    IDS_STRING_RFID_ERROR_NONVOLATILE_OUT_OF_BOUNDS 
+                            "Nonvolatile memory address is out of range"
+    IDS_STRING_RFID_ERROR_NONVOLATILE_WRITE_FAILED 
+                            "The radio failed to write to nonvolatile memory"
+    IDS_STRING_RFID_ERROR_UNKNOWN "Unknown error"
+    IDS_STRING_POWER_OFF    "Power O&ff"
+    IDS_STRING_POWER_ON     "Power &On"
+    IDS_STRING_RFID_STOP_SUCCESS "Stop"
+    IDS_STRING_RFID_STOP_FAIL "Stop Fail"
+    IDS_STRING_INVENTORY    "Inventory"
+    IDS_STRING_RFID_POWER_ON "Power On"
+    IDS_STRING_RFID_POWER_OFF "Power Off"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_TAGACCESS_ERROR_01 "Read After write tag command."
+    IDS_STRING_TAGACCESS_ERROR_02 "Problem transmitting tag command."
+    IDS_STRING_TAGACCESS_ERROR_03 "CRC error on tag response to a write."
+    IDS_STRING_TAGACCESS_ERROR_04 
+                            "CRC error on the read packet when verifying the write."
+    IDS_STRING_TAGACCESS_ERROR_05 "Maximum retry's on the write exceeded."
+    IDS_STRING_TAGACCESS_ERROR_06 
+                            "Failed waiting for read data from tag, possible timeout."
+    IDS_STRING_TAGACCESS_ERROR_07 "Failure requesting a new tag handle."
+    IDS_STRING_TAGACCESS_ERROR_0A 
+                            "Error waiting for tag response, possible timeout."
+    IDS_STRING_TAGACCESS_ERROR_0B "CRC error on tag response to a kill."
+    IDS_STRING_TAGACCESS_ERROR_0C "Problem transmitting 2nd half of tag kill."
+    IDS_STRING_TAGACCESS_ERROR_0D 
+                            "Tag responded with an invalid handle on first kill command."
+    IDS_STRING_TAGACCESS_BACKSCATTER_00 
+                            "General error (catch-all for errors not covered by codes)"
+    IDS_STRING_TAGACCESS_BACKSCATTER_03 
+                            "Specified memory location does not exist of the PC value is not supported by the tag"
+    IDS_STRING_TAGACCESS_BACKSCATTER_04 
+                            "Specified memory location is locked and/or permalocked and is not writeable"
+    IDS_STRING_TAGACCESS_BACKSCATTER_0B 
+                            "Tag has insufficient power to perform the memory write"
+    IDS_STRING_TAGACCESS_BACKSCATTER_0F 
+                            "Tag does not support error-specific codes"
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_INFO_TOOLBAR        BITMAP                  "res\\toolbar1.bmp"
+IDB_BITMAP_TOOLBAR_COLOR_16 BITMAP                  "res\\Cmdbar_color.bmp"
+IDB_BITMAP_TOOLBAR_GRAY_16 BITMAP                  "res\\Cmdbar_gray.bmp"
+IDB_BITMAP_TOOLBAR_GRAY_32 BITMAP                  "res\\Cmdbar_gray_32.bmp"
+IDB_BITMAP_TOOLBAR_COLOR_32 BITMAP                  "res\\Cmdbar_color_32.bmp"
+IDB_BITMAP_INFO_TOOLBAR_GRAY_32 BITMAP                  "res\\toolbar1_gray_32.bmp"
+IDB_BITMAP_INFO_TOOLBAR_COLOR_32 BITMAP                  "res\\toolbar1_color_32.bmp"
+IDB_BITMAP_INFO_TOOLBAR_COLOR_16 BITMAP                  "res\\toolbar1_color_16.bmp"
+IDB_BITMAP_INFO_TOOLBAR_GRAY_16 BITMAP                  "res\\toolbar1_gray_16.bmp"
+IDR_TOOLBAR_TAGACCESS   BITMAP                  "res\\bmp00001.bmp"
+IDB_BITMAP_TAG_ACCESS_COLOR_32 BITMAP                  "res\\tagaccess_color_32.bmp"
+IDB_BITMAP_TAG_ACCESS_GRAY_32 BITMAP                  "res\\tagaccess_gray_32.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_INFO_TOOLBAR TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_RFID_RUN_INVENTORY
+    BUTTON      ID_RFID_INVENTORY_ONCE
+    SEPARATOR
+    BUTTON      ID_RFID_STOP_INVENTORY
+    SEPARATOR
+    BUTTON      ID_READ_TOTAL_COUNT
+    SEPARATOR
+    BUTTON      ID_LEAK_CHECK
+    BUTTON      ID_LEAK_TIME
+END
+
+IDR_TOOLBAR_TAGACCESS TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_TAG_READ
+    BUTTON      ID_TAG_WRITE
+    BUTTON      ID_TAG_LOCK
+    BUTTON      ID_TAG_KILL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 139, 70
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE 0x80000000L
+CAPTION "About RFRM"
+FONT 8, "Tahoma"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "1.1.1.14",IDC_STATIC_PRODUCT_VERSION,88,7,44,8,SS_NOPREFIX
+    LTEXT           "Copyright 2008 ? Samsung Techwin Co., Ltd.\nAll rights reserved.",IDC_STATIC,40,27,92,24
+    LTEXT           "Mac Version Static",IDC_STATIC_MAC_VERSION,88,16,44,8
+    LTEXT           "Mac Version",IDC_STATIC,40,16,46,8,SS_NOPREFIX
+    LTEXT           "RFID Reader Manager",IDC_STATIC,7,7,74,8
+END
+
+IDD_DIALOG_SPLASH DIALOG  0, 0, 133, 123
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    LTEXT           "",IDC_STATIC_STATUS,0,108,142,8
+    CONTROL         138,IDC_STATIC,"Static",SS_BITMAP,0,0,133,123
+END
+
+IDD_DIALOG_ANTENNA DIALOG  0, 0, 155, 166
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Antenna"
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "",IDC_LIST_ANTENNA,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,3,7,127,131
+END
+
+IDD_DIALOG_ANTENNA_EDIT DIALOG  0, 0, 123, 150
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Antenna Edit Dialog"
+FONT 8, "Tahoma"
+BEGIN
+    COMBOBOX        IDC_COMBO_STATE,65,7,51,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_POWER,65,26,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_POWER,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,105,26,11,14
+    EDITTEXT        IDC_EDIT_PHY_TX,65,47,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_PHY_TX,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,105,47,11,14
+    EDITTEXT        IDC_EDIT_DWELL,65,68,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_DWELL,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,105,68,11,14
+    EDITTEXT        IDC_EDIT_INV_CYCLE,65,89,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_INV_CYCLE,"msctls_updown32",UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS,105,89,11,14
+    DEFPUSHBUTTON   "OK",IDOK,7,119,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,65,118,50,14
+    RTEXT           "Power (1/10dBm)",IDC_STATIC,7,29,56,8
+    RTEXT           "Tx Physical Port",IDC_STATIC,10,50,52,8
+    RTEXT           "Maximum Dwell \nTime(millisecond)",IDC_STATIC,9,66,53,17
+    RTEXT           "Maximum \nInventory Cycles",IDC_STATIC,7,87,55,16
+    RTEXT           "Antenna State",IDC_STATIC,14,10,48,8
+END
+
+IDD_DIALOG_TAG_ACCESS_WRITE DIALOG  0, 0, 127, 116
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tag Access (Write)"
+FONT 8, "Tahoma"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,95,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,67,95,50,14
+    EDITTEXT        IDC_EDIT_EPC,7,7,113,14,ES_AUTOHSCROLL
+    LTEXT           "Offset :",IDC_STATIC,33,43,26,8
+    LTEXT           "Count :",IDC_STATIC,34,59,25,8
+    LTEXT           "Memory Bank :",IDC_STATIC,11,26,48,8
+    COMBOBOX        IDC_COMBO_MBANK,60,24,60,46,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_OFFSET,60,41,60,50,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_COUNT,60,58,60,54,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_WRITE_DATA,40,75,80,14,ES_AUTOHSCROLL
+    LTEXT           "Data :",IDC_STATIC,11,77,21,8
+END
+
+IDD_DIALOG_ALGORITHM DIALOG  0, 0, 135, 261
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Algorithm"
+FONT 8, "Tahoma"
+BEGIN
+    COMBOBOX        IDC_COMBO_ALGORITHM,11,15,108,30,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Select State",IDC_STATIC,10,46,41,8
+    COMBOBOX        IDC_COMBO_SELECT_STATE,70,44,49,30,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Session",IDC_STATIC,10,60,32,8
+    COMBOBOX        IDC_COMBO_SESSION,70,58,49,30,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Start Q",IDC_STATIC_START_Q,12,105,32,8
+    EDITTEXT        IDC_EDIT_START_Q,70,103,40,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_START_Q,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS,110,103,9,12
+    EDITTEXT        IDC_EDIT_MIN_Q,70,117,40,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_MIN_Q,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS,110,117,9,12
+    LTEXT           "Min Q",IDC_STATIC_MIN_Q,12,118,32,8
+    EDITTEXT        IDC_EDIT_MAX_Q,70,131,40,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_MAX_Q,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS,110,131,9,12
+    LTEXT           "Max Q",IDC_STATIC_MAX_Q,12,132,32,8
+    EDITTEXT        IDC_EDIT_RETRY_COUNT,70,145,40,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_RETRY_COUNT,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS,110,145,9,12
+    LTEXT           "Retry Count",IDC_STATIC_RETRY_COUNT,12,146,42,8
+    LTEXT           "Toggle Target",IDC_STATIC_TOGGLE_TARGET,12,161,47,8
+    COMBOBOX        IDC_COMBO_TOGGLE_TARGET,70,159,49,30,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    SCROLLBAR       IDC_SCROLLBAR_ALGORITHM,127,0,8,132,SBS_VERT
+    GROUPBOX        "Algorithm",IDC_STATIC,5,5,121,27
+    COMBOBOX        IDC_COMBO_SESSION_TARGET,70,73,49,30,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Session Target",IDC_STATIC,10,74,49,8
+    GROUPBOX        "Query Parameter",IDC_STATIC,5,92,121,156
+    GROUPBOX        "Query Tag Group",IDC_STATIC,5,35,121,54
+    LTEXT           "Repeat Until No Tags",IDC_STATIC,12,223,70,8
+    COMBOBOX        IDC_COMBO_REPETE_UNTILE_NO_TAGS,70,232,49,30,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Q Value",IDC_STATIC,12,175,32,8
+    EDITTEXT        IDC_EDIT_Q_VALUE,70,173,40,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_QVALUE,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS,110,173,9,12
+    LTEXT           "Max Query Reps",IDC_STATIC,12,189,55,8
+    EDITTEXT        IDC_EDIT_MAX_QUERY_REPS,70,187,40,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_MAX_QUERY_REPS,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS,110,187,9,12
+    LTEXT           "Threshold Multiplier",IDC_STATIC,12,202,67,8
+    EDITTEXT        IDC_EDIT_THRESHOLD_MULTIPLIER,70,211,40,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_THRESHOLD_MULTIPLIER,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS,110,211,9,12
+END
+
+IDD_DIALOG_TAG_ACCESS_KILL DIALOG  0, 0, 134, 85
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tag Access (Kill)"
+FONT 8, "Tahoma"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,77,64,50,14
+    DEFPUSHBUTTON   "OK",IDOK,7,64,50,14
+    EDITTEXT        IDC_EDIT_ACCESS_PASSWORD,71,26,56,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_KILL_PASSWORD,71,45,56,14,ES_AUTOHSCROLL
+    LTEXT           "Access Password :",IDC_STATIC,7,28,60,8
+    LTEXT           "Kill Password :",IDC_STATIC,7,47,46,8
+    EDITTEXT        IDC_EDIT_EPC,7,7,120,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_TAG_ACCESS_READ DIALOG  0, 0, 127, 98
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tag Access(Read)"
+FONT 8, "Tahoma"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,77,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,70,77,50,14
+    EDITTEXT        IDC_EDIT_EPC,7,7,113,14,ES_AUTOHSCROLL
+    LTEXT           "Offset :",IDC_STATIC,33,43,26,8
+    LTEXT           "Count :",IDC_STATIC,34,59,25,8
+    LTEXT           "Memory Bank :",IDC_STATIC,11,26,48,8
+    COMBOBOX        IDC_COMBO_MBANK,60,24,60,46,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_OFFSET,60,41,60,46,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_COUNT,60,58,60,46,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_TAG_ACCESS_LOCK DIALOG  0, 0, 144, 164
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION " Tag Access (Lock)"
+FONT 8, "Tahoma"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,17,143,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,80,143,50,14
+    COMBOBOX        IDC_COMBO_KILL_PASSWORD_PERMISSION,77,32,60,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ACCESS_PASSWORD_PERMISSION,77,49,60,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_EPC_BANK_PERMISSION,77,67,60,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_TID_BANK_PERMISSION,77,85,60,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_USER_BANK_PERMISSION,77,103,60,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Kill Password :",IDC_STATIC,14,35,47,8
+    LTEXT           "Access Password :",IDC_STATIC,14,52,59,8
+    LTEXT           "EPC Bank :",IDC_STATIC,14,70,40,8
+    LTEXT           "TID Bank :",IDC_STATIC,14,88,36,8
+    LTEXT           "User Bank :",IDC_STATIC,14,106,45,8
+    GROUPBOX        "Permission",IDC_STATIC,7,23,130,98
+    EDITTEXT        IDC_EDIT_ACCESS_PASSWORD,71,125,66,14,ES_AUTOHSCROLL
+    LTEXT           "Access Password :",IDC_STATIC,7,128,61,8
+    EDITTEXT        IDC_EDIT_EPC,7,7,130,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_GENERAL DIALOG  0, 0, 135, 143
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "General"
+FONT 8, "Tahoma"
+BEGIN
+    LTEXT           "Region",IDC_STATIC,5,5,23,8
+    COMBOBOX        IDC_COMBO_REGION,25,14,105,40,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Link Profile :",IDC_STATIC,5,27,63,8
+    COMBOBOX        IDC_COMBO_LINK_PROFILE,25,36,105,43,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Data Format :",IDC_STATIC,5,49,47,8
+    COMBOBOX        IDC_COMBO_DATA_FORMAT,25,58,105,43,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Operation Mode :",IDC_STATIC,5,71,59,8
+    COMBOBOX        IDC_COMBO_OPERATION_MODE,25,80,105,42,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Inventory Algorithm :",IDC_STATIC,5,93,70,8
+    COMBOBOX        IDC_COMBO_INVENTORY_ALGORITHM,25,102,105,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_BEEP_MODE,25,124,105,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Beep Mode :",IDC_STATIC,5,115,70,8
+END
+
+IDD_DIALOG_ENGINEERING DIALOG  0, 0, 134, 166
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Engineering"
+FONT 8, "Tahoma"
+BEGIN
+    EDITTEXT        IDC_EDIT_TRANSFER_TIME,66,7,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAX_TRIAL_COUNT,66,25,40,14,ES_AUTOHSCROLL
+    CONTROL         "Carrier Wave On/Off",IDC_CHECK_CARRIER_ON_OFF,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,43,83,14
+    CONTROL         "Leak Continous Mode",IDC_CHECK_LEAK_CONT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,61,84,10
+    CONTROL         "EPC",IDC_RADIO_EPC_DISPLAY,"Button",BS_AUTORADIOBUTTON | WS_GROUP,14,90,29,10
+    CONTROL         "Ascii",IDC_RADIO_ASCII_DISPLAY,"Button",BS_AUTORADIOBUTTON,66,90,30,10
+    EDITTEXT        IDC_EDIT_BEEP_FILE_PATH,12,120,71,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browsing",IDC_BUTTON_BEEP_FILE_PATH,88,120,33,14
+    GROUPBOX        "Beep File Path",IDC_STATIC,7,107,120,33
+    RTEXT           "Transfer Time",IDC_STATIC,7,9,45,8
+    RTEXT           "Max Trial Count",IDC_STATIC,7,27,51,8
+    GROUPBOX        "Display Option",IDC_STATIC,7,75,120,31
+END
+
+IDD_DIALOG_SELECT_CRITERIA DIALOG  0, 0, 135, 158
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Criteria"
+FONT 8, "Tahoma"
+BEGIN
+    LTEXT           "Display Criterion",IDC_STATIC,7,7,56,8
+    EDITTEXT        IDC_EDIT1,25,16,78,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_DISPLAY_CRITERION,"msctls_updown32",UDS_ARROWKEYS,119,16,9,12
+END
+
+IDD_DIALOG_POST_SINGULATION DIALOG  0, 0, 135, 158
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_VSCROLL | WS_SYSMENU
+CAPTION "Post Singulation"
+FONT 8, "Tahoma"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,15,137,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,71,137,50,14
+END
+
+IDD_DIALOG_INTERFACE DIALOG  0, 0, 120, 108
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "Tahoma"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,87,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,63,87,50,14
+    COMBOBOX        IDC_COMBO_INTERFACE,20,18,76,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Host Interface",IDC_STATIC,7,7,46,8
+    EDITTEXT        IDC_EDIT_ADDRESS,20,42,77,14,ES_AUTOHSCROLL
+    LTEXT           "IP Address",IDC_STATIC,7,33,36,8
+    LTEXT           "Port",IDC_STATIC,7,59,14,8
+    EDITTEXT        IDC_EDIT_PORT,20,70,40,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_SERVER_IP DIALOG  0, 0, 158, 28
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "Tahoma"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,101,7,50,14
+    EDITTEXT        IDC_EDIT_IPADDRESS,7,7,88,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_FREQUENCY_BAND DIALOG  0, 0, 135, 150
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Frequency Band"
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "",IDC_LIST_FREQUENCY_BAND,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER,7,7,121,121
+    COMBOBOX        IDC_COMBO_REGION,7,130,121,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_COUNT DIALOG  0, 0, 433, 266
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "Tahoma"
+BEGIN
+    EDITTEXT        IDC_EDIT_COUNT_LARGE,7,7,419,252,ES_CENTER
+END
+
+IDD_DIALOG_FIRMWARE_OPTION DIALOG  0, 0, 119, 97
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Update Option"
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "Update All",IDC_RADIO_UPDATE_ALL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,14,18,49,13
+    CONTROL         "Test Mode Only",IDC_RADIO_TEST_MODE_ONLY,"Button",BS_AUTORADIOBUTTON,14,35,66,13
+    CONTROL         "Skip Test Mode",IDC_RADIO_SKIP_TEST_MODE,"Button",BS_AUTORADIOBUTTON,14,51,64,13
+    DEFPUSHBUTTON   "OK",IDOK,7,76,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,62,76,50,14
+    GROUPBOX        "Update Option",IDC_STATIC,7,7,105,64,WS_GROUP
+END
+
+IDD_DIALOG_FIRMWARE_STATUS DIALOG  0, 0, 123, 76
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Firmware Update Status"
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,7,55,109,14
+    LTEXT           "",IDC_STATIC_STATUS,37,7,79,8
+    LTEXT           "Status :",IDC_STATIC,7,7,26,8
+    LTEXT           "Result :",IDC_STATIC,7,23,26,8
+    LTEXT           "",IDC_STATIC_RESULT,37,23,79,24
+    LTEXT           "",IDC_STATIC_TIMER,7,41,31,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 132
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+
+    IDD_DIALOG_SPLASH, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_DIALOG_ANTENNA, DIALOG
+    BEGIN
+        RIGHTMARGIN, 153
+        VERTGUIDE, 3
+        VERTGUIDE, 69
+        VERTGUIDE, 130
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_DIALOG_ANTENNA_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 116
+        VERTGUIDE, 62
+        VERTGUIDE, 65
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_DIALOG_TAG_ACCESS_WRITE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 120
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+
+    IDD_DIALOG_ALGORITHM, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 130
+        VERTGUIDE, 11
+        VERTGUIDE, 63
+        VERTGUIDE, 119
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 256
+    END
+
+    IDD_DIALOG_TAG_ACCESS_KILL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 127
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+
+    IDD_DIALOG_TAG_ACCESS_READ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 120
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_DIALOG_TAG_ACCESS_LOCK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 137
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_DIALOG_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 130
+        VERTGUIDE, 25
+        VERTGUIDE, 44
+        VERTGUIDE, 50
+        VERTGUIDE, 130
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_DIALOG_ENGINEERING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 127
+        VERTGUIDE, 61
+        VERTGUIDE, 66
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_DIALOG_SELECT_CRITERIA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 128
+        VERTGUIDE, 25
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_DIALOG_POST_SINGULATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 120
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_DIALOG_INTERFACE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 113
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_DIALOG_SERVER_IP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 21
+    END
+
+    IDD_DIALOG_FREQUENCY_BAND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 128
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_DIALOG_COUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 426
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 259
+    END
+
+    IDD_DIALOG_FIRMWARE_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 112
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_DIALOG_FIRMWARE_STATUS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 116
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_TAG_ACCESS_WRITE DLGINIT
+BEGIN
+    IDC_COMBO_MBANK, 0x403, 9, 0
+0x6552, 0x6573, 0x7672, 0x6465, "\000" 
+    IDC_COMBO_MBANK, 0x403, 4, 0
+0x5045, 0x0043, 
+    IDC_COMBO_MBANK, 0x403, 4, 0
+0x4954, 0x0044, 
+    IDC_COMBO_MBANK, 0x403, 5, 0
+0x7355, 0x7265, "\000" 
+    IDC_COMBO_OFFSET, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO_OFFSET, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_OFFSET, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_OFFSET, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO_OFFSET, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO_OFFSET, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO_OFFSET, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO_OFFSET, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO_OFFSET, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO_OFFSET, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO_OFFSET, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO_OFFSET, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO_OFFSET, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO_OFFSET, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO_OFFSET, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO_OFFSET, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO_OFFSET, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO_OFFSET, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COMBO_COUNT, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_COUNT, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_COUNT, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO_COUNT, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO_COUNT, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO_COUNT, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO_COUNT, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO_COUNT, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO_COUNT, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO_COUNT, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO_COUNT, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO_COUNT, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO_COUNT, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO_COUNT, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO_COUNT, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO_COUNT, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO_COUNT, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO_COUNT, 0x403, 3, 0
+0x3831, "\000" 
+    0
+END
+
+IDD_DIALOG_TAG_ACCESS_READ DLGINIT
+BEGIN
+    IDC_COMBO_MBANK, 0x403, 9, 0
+0x6552, 0x6573, 0x7672, 0x6465, "\000" 
+    IDC_COMBO_MBANK, 0x403, 4, 0
+0x5045, 0x0043, 
+    IDC_COMBO_MBANK, 0x403, 4, 0
+0x4954, 0x0044, 
+    IDC_COMBO_MBANK, 0x403, 5, 0
+0x5355, 0x5245, "\000" 
+    IDC_COMBO_OFFSET, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO_OFFSET, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_OFFSET, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_OFFSET, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO_OFFSET, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO_OFFSET, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO_OFFSET, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO_OFFSET, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO_OFFSET, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO_OFFSET, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO_OFFSET, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO_OFFSET, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO_OFFSET, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO_OFFSET, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO_OFFSET, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO_OFFSET, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO_OFFSET, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO_OFFSET, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COMBO_COUNT, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_COUNT, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_COUNT, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO_COUNT, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO_COUNT, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO_COUNT, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO_COUNT, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO_COUNT, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO_COUNT, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO_COUNT, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO_COUNT, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO_COUNT, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO_COUNT, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO_COUNT, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO_COUNT, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO_COUNT, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO_COUNT, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COMBO_COUNT, 0x403, 3, 0
+0x3831, "\000" 
+    0
+END
+
+IDD_DIALOG_TAG_ACCESS_LOCK DLGINIT
+BEGIN
+    IDC_COMBO_KILL_PASSWORD_PERMISSION, 0x403, 11, 0
+0x4341, 0x4543, 0x5353, 0x4249, 0x454c, "\000" 
+    IDC_COMBO_KILL_PASSWORD_PERMISSION, 0x403, 18, 0
+0x4c41, 0x4157, 0x5359, 0x415f, 0x4343, 0x5345, 0x4953, 0x4c42, 0x0045, 
+
+    IDC_COMBO_KILL_PASSWORD_PERMISSION, 0x403, 19, 0
+0x4553, 0x5543, 0x4552, 0x5f44, 0x4341, 0x4543, 0x5353, 0x4249, 0x454c, 
+"\000" 
+    IDC_COMBO_KILL_PASSWORD_PERMISSION, 0x403, 22, 0
+0x4c41, 0x4157, 0x5359, 0x4e5f, 0x544f, 0x415f, 0x4343, 0x5345, 0x4953, 
+0x4c42, 0x0045, 
+    IDC_COMBO_KILL_PASSWORD_PERMISSION, 0x403, 10, 0
+0x4f4e, 0x435f, 0x4148, 0x474e, 0x0045, 
+    IDC_COMBO_KILL_PASSWORD_PERMISSION, 0x403, 8, 0
+0x4e55, 0x4e4b, 0x574f, 0x004e, 
+    IDC_COMBO_ACCESS_PASSWORD_PERMISSION, 0x403, 11, 0
+0x4341, 0x4543, 0x5353, 0x4249, 0x454c, "\000" 
+    IDC_COMBO_ACCESS_PASSWORD_PERMISSION, 0x403, 18, 0
+0x4c41, 0x4157, 0x5359, 0x415f, 0x4343, 0x5345, 0x4953, 0x4c42, 0x0045, 
+
+    IDC_COMBO_ACCESS_PASSWORD_PERMISSION, 0x403, 19, 0
+0x4553, 0x5543, 0x4552, 0x5f44, 0x4341, 0x4543, 0x5353, 0x4249, 0x454c, 
+"\000" 
+    IDC_COMBO_ACCESS_PASSWORD_PERMISSION, 0x403, 22, 0
+0x4c41, 0x4157, 0x5359, 0x4e5f, 0x544f, 0x415f, 0x4343, 0x5345, 0x4953, 
+0x4c42, 0x0045, 
+    IDC_COMBO_ACCESS_PASSWORD_PERMISSION, 0x403, 10, 0
+0x4f4e, 0x435f, 0x4148, 0x474e, 0x0045, 
+    IDC_COMBO_ACCESS_PASSWORD_PERMISSION, 0x403, 8, 0
+0x4e55, 0x4e4b, 0x574f, 0x004e, 
+    IDC_COMBO_EPC_BANK_PERMISSION, 0x403, 10, 0
+0x5257, 0x5449, 0x4145, 0x4c42, 0x0045, 
+    IDC_COMBO_EPC_BANK_PERMISSION, 0x403, 17, 0
+0x4c41, 0x4157, 0x5359, 0x575f, 0x4952, 0x4554, 0x4241, 0x454c, "\000" 
+    IDC_COMBO_EPC_BANK_PERMISSION, 0x403, 18, 0
+0x4553, 0x5543, 0x4552, 0x5f44, 0x5257, 0x5449, 0x4145, 0x4c42, 0x0045, 
+
+    IDC_COMBO_EPC_BANK_PERMISSION, 0x403, 21, 0
+0x4c41, 0x4157, 0x5359, 0x4e5f, 0x544f, 0x575f, 0x4952, 0x4554, 0x4241, 
+0x454c, "\000" 
+    IDC_COMBO_EPC_BANK_PERMISSION, 0x403, 10, 0
+0x4f4e, 0x435f, 0x4148, 0x474e, 0x0045, 
+    IDC_COMBO_EPC_BANK_PERMISSION, 0x403, 8, 0
+0x4e55, 0x4e4b, 0x574f, 0x004e, 
+    IDC_COMBO_TID_BANK_PERMISSION, 0x403, 10, 0
+0x5257, 0x5449, 0x4145, 0x4c42, 0x0045, 
+    IDC_COMBO_TID_BANK_PERMISSION, 0x403, 17, 0
+0x4c41, 0x4157, 0x5359, 0x575f, 0x4952, 0x4554, 0x4241, 0x454c, "\000" 
+    IDC_COMBO_TID_BANK_PERMISSION, 0x403, 18, 0
+0x4553, 0x5543, 0x4552, 0x5f44, 0x5257, 0x5449, 0x4145, 0x4c42, 0x0045, 
+
+    IDC_COMBO_TID_BANK_PERMISSION, 0x403, 21, 0
+0x4c41, 0x4157, 0x5359, 0x4e5f, 0x544f, 0x575f, 0x4952, 0x4554, 0x4241, 
+0x454c, "\000" 
+    IDC_COMBO_TID_BANK_PERMISSION, 0x403, 10, 0
+0x4f4e, 0x435f, 0x4148, 0x474e, 0x0045, 
+    IDC_COMBO_TID_BANK_PERMISSION, 0x403, 8, 0
+0x4e55, 0x4e4b, 0x574f, 0x004e, 
+    IDC_COMBO_USER_BANK_PERMISSION, 0x403, 10, 0
+0x5257, 0x5449, 0x4145, 0x4c42, 0x0045, 
+    IDC_COMBO_USER_BANK_PERMISSION, 0x403, 17, 0
+0x4c41, 0x4157, 0x5359, 0x575f, 0x4952, 0x4554, 0x4241, 0x454c, "\000" 
+    IDC_COMBO_USER_BANK_PERMISSION, 0x403, 18, 0
+0x4553, 0x5543, 0x4552, 0x5f44, 0x5257, 0x5449, 0x4145, 0x4c42, 0x0045, 
+
+    IDC_COMBO_USER_BANK_PERMISSION, 0x403, 21, 0
+0x4c41, 0x4157, 0x5359, 0x4e5f, 0x544f, 0x575f, 0x4952, 0x4554, 0x4241, 
+0x454c, "\000" 
+    IDC_COMBO_USER_BANK_PERMISSION, 0x403, 10, 0
+0x4f4e, 0x435f, 0x4148, 0x474e, 0x0045, 
+    IDC_COMBO_USER_BANK_PERMISSION, 0x403, 8, 0
+0x4e55, 0x4e4b, 0x574f, 0x004e, 
+    0
+END
+
+IDD_DIALOG_GENERAL DLGINIT
+BEGIN
+    IDC_COMBO_REGION, 0x403, 8, 0
+0x2030, 0x203a, 0x4346, 0x0043, 
+    IDC_COMBO_REGION, 0x403, 9, 0
+0x2031, 0x203a, 0x5445, 0x4953, "\000" 
+    IDC_COMBO_REGION, 0x403, 12, 0
+0x2032, 0x203a, 0x454e, 0x4557, 0x5354, 0x0049, 
+    IDC_COMBO_REGION, 0x403, 10, 0
+0x2033, 0x203a, 0x414a, 0x4150, 0x004e, 
+    IDC_COMBO_REGION, 0x403, 14, 0
+0x2034, 0x203a, 0x4f4b, 0x4552, 0x5f41, 0x424c, 0x0054, 
+    IDC_COMBO_REGION, 0x403, 15, 0
+0x2035, 0x203a, 0x4f4b, 0x4552, 0x5f41, 0x4846, 0x5353, "\000" 
+    IDC_COMBO_LINK_PROFILE, 0x403, 26, 0
+0x2030, 0x203a, 0x5344, 0x5f42, 0x5341, 0x204b, 0x202f, 0x304d, 0x2f20, 
+0x3120, 0x2030, 0x684b, 0x007a, 
+    IDC_COMBO_LINK_PROFILE, 0x403, 27, 0
+0x2031, 0x203a, 0x5344, 0x5f42, 0x5341, 0x204b, 0x202f, 0x314d, 0x2f20, 
+0x3120, 0x3036, 0x4b20, 0x7a68, "\000" 
+    IDC_COMBO_LINK_PROFILE, 0x403, 26, 0
+0x2032, 0x203a, 0x5250, 0x415f, 0x4b53, 0x2f20, 0x4d20, 0x2032, 0x202f, 
+0x3532, 0x2030, 0x684b, 0x007a, 
+    IDC_COMBO_LINK_PROFILE, 0x403, 26, 0
+0x2033, 0x203a, 0x5250, 0x415f, 0x4b53, 0x2f20, 0x4d20, 0x2032, 0x202f, 
+0x3033, 0x2030, 0x684b, 0x007a, 
+    IDC_COMBO_LINK_PROFILE, 0x403, 27, 0
+0x2034, 0x203a, 0x5344, 0x5f42, 0x5341, 0x204b, 0x202f, 0x304d, 0x2f20, 
+0x3420, 0x3030, 0x4b20, 0x7a68, "\000" 
+    IDC_COMBO_LINK_PROFILE, 0x403, 26, 0
+0x2035, 0x203a, 0x5250, 0x415f, 0x4b53, 0x2f20, 0x4d20, 0x2031, 0x202f, 
+0x3532, 0x2030, 0x684b, 0x007a, 
+    IDC_COMBO_DATA_FORMAT, 0x403, 8, 0
+0x4f43, 0x504d, 0x4341, 0x0054, 
+    IDC_COMBO_DATA_FORMAT, 0x403, 7, 0
+0x4f4e, 0x4d52, 0x4c41, "\000" 
+    IDC_COMBO_DATA_FORMAT, 0x403, 9, 0
+0x5845, 0x4554, 0x444e, 0x4445, "\000" 
+    IDC_COMBO_OPERATION_MODE, 0x403, 14, 0
+0x4f4e, 0x434e, 0x4e4f, 0x4954, 0x554e, 0x554f, 0x0053, 
+    IDC_COMBO_OPERATION_MODE, 0x403, 11, 0
+0x4f43, 0x544e, 0x4e49, 0x4f55, 0x5355, "\000" 
+    IDC_COMBO_OPERATION_MODE, 0x403, 8, 0
+0x4e55, 0x4e4b, 0x574f, 0x004e, 
+    IDC_COMBO_INVENTORY_ALGORITHM, 0x403, 7, 0
+0x6946, 0x6578, 0x5164, "\000" 
+    IDC_COMBO_INVENTORY_ALGORITHM, 0x403, 9, 0
+0x7944, 0x616e, 0x696d, 0x5163, "\000" 
+    IDC_COMBO_INVENTORY_ALGORITHM, 0x403, 16, 0
+0x7944, 0x616e, 0x696d, 0x5163, 0x4120, 0x6a64, 0x7375, 0x0074, 
+    IDC_COMBO_INVENTORY_ALGORITHM, 0x403, 16, 0
+0x7944, 0x616e, 0x696d, 0x5163, 0x5420, 0x7268, 0x7365, 0x0068, 
+    IDC_COMBO_INVENTORY_ALGORITHM, 0x403, 8, 0
+0x4e55, 0x4e4b, 0x574f, 0x004e, 
+    IDC_COMBO_BEEP_MODE, 0x403, 8, 0
+0x4944, 0x4153, 0x4c42, 0x0045, 
+    IDC_COMBO_BEEP_MODE, 0x403, 7, 0
+0x4e45, 0x4241, 0x454c, "\000" 
+    IDC_COMBO_BEEP_MODE, 0x403, 8, 0
+0x4e55, 0x4e4b, 0x574f, 0x004e, 
+    0
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\RFRM.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

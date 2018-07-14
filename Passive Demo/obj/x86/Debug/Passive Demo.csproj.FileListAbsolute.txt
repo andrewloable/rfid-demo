@@ -1,0 +1,60 @@
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\bin\Debug\basedll\Microsoft.VisualBasic.dll
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\bin\Debug\Passive Demo.exe
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\bin\Debug\Passive Demo.pdb
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\bin\Debug\ADBases.dll
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\bin\Debug\ADDevice.dll
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\bin\Debug\ADDeviceReader.dll
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\bin\Debug\ADDeviceReaderControls.dll
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\bin\Debug\ADSets.dll
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\bin\Debug\ADBases.pdb
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\bin\Debug\ADSets.pdb
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\bin\Debug\ADDeviceReaderControls.pdb
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\bin\Debug\ADDeviceReader.pdb
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\bin\Debug\ADDevice.pdb
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Passive Demo.csprojResolveAssemblyReference.cache
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Aosid.frmAbout.resources
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Aosid.frmMain.resources
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Aosid.frmSioConfig.resources
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Aosid.frmWait.resources
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Aosid.ucPBaseSettings.resources
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Aosid.Passive.ucPQuickWriteEPC.resources
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Aosid.ucPReadDemo.resources
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Aosid.ucPSeniorSettings.resources
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Aosid.ucPWifiSettings.resources
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Aosid.ucPWriteEPC.resources
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Aosid.ucPWriteISO.resources
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Aosid.Properties.Resources.resources
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Aosid.ucPassive.resources
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Passive Demo.csproj.GenerateResource.Cache
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Passive Demo.exe
+D:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Passive Demo.pdb
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\bin\Debug\basedll\Microsoft.VisualBasic.dll
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\bin\Debug\Passive Demo.exe
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\bin\Debug\Passive Demo.pdb
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\bin\Debug\ADBases.dll
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\bin\Debug\ADDevice.dll
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\bin\Debug\ADDeviceReader.dll
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\bin\Debug\ADDeviceReaderControls.dll
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\bin\Debug\ADSets.dll
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\bin\Debug\ADBases.pdb
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\bin\Debug\ADSets.pdb
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\bin\Debug\ADDeviceReaderControls.pdb
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\bin\Debug\ADDeviceReader.pdb
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\bin\Debug\ADDevice.pdb
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Aosid.frmAbout.resources
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Aosid.frmMain.resources
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Aosid.frmSioConfig.resources
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Aosid.frmWait.resources
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Aosid.ucPBaseSettings.resources
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Aosid.Passive.ucPQuickWriteEPC.resources
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Aosid.ucPReadDemo.resources
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Aosid.ucPSeniorSettings.resources
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Aosid.ucPWifiSettings.resources
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Aosid.ucPWriteEPC.resources
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Aosid.ucPWriteISO.resources
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Aosid.Properties.Resources.resources
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Aosid.ucPassive.resources
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Passive Demo.csproj.GenerateResource.Cache
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Passive Demo.exe
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Passive Demo.pdb
+E:\VS2012\Application Solution\Reader\RFID\SDK\Passive Demo\obj\x86\Debug\Passive Demo.csprojResolveAssemblyReference.cache

@@ -1,0 +1,4 @@
+Development kit (SDK) : used for secondary development
+Documents (Document) : demo application documentation
+The Demo (Demo) : Demo card read card reader connected to the computer, can modify parameters
+Note: open the demo, the pop-up "normal application initialization error (0xc0000135) failed" error, please install the support files ".net Framework 2.0 ";

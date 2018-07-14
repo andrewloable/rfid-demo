@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>209, 17</value>
+  </metadata>
+  <data name="grbCardType.ToolTip" xml:space="preserve">
+    <value>读卡类别：读卡器读取卡片的种类及读取数据的类别；
+1.	ISO18000-6B： 读卡只读具有ISO18000-6B协议下的标签；
+2.	EPC（GEN 2）Single - Tag： 读卡只读EPC（GEN 2）协议下的标签，一次只能读取一张标签，多标签同时置于读卡器有效范围是，读卡器可能不读或者读取困难；
+3.	EPC（GEN 2）Multi - Tag： 读卡只读EPC（GEN 2）协议下的标签，可同时读取多张标签；
+4.	EPC（GEN 2）Multi - Data： 读卡只读EPC（GEN 2）协议下的标签，除读取默认EPC区12字节数据外可读取另外区域的数据（选择该类别时，可在高级参数中设置读取其他区的数据的位置长度， 最大12字节）；
+5.	ISO18000-6B + EPC（GEN 2）： 可读ISO18000-6B协议和EPC（GEN 2）协议标签；
+</value>
+  </data>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>209, 17</value>
+  </metadata>
+  <data name="cmbCardType.ToolTip" xml:space="preserve">
+    <value>读卡类别：读卡器读取卡片的种类及读取数据的类别；
+1.	ISO18000-6B： 读卡只读具有ISO18000-6B协议下的标签；
+2.	EPC（GEN 2）Single - Tag： 读卡只读EPC（GEN 2）协议下的标签，一次只能读取一张标签，多标签同时置于读卡器有效范围是，读卡器可能不读或者读取困难；
+3.	EPC（GEN 2）Multi - Tag： 读卡只读EPC（GEN 2）协议下的标签，可同时读取多张标签；
+4.	EPC（GEN 2）Multi - Data： 读卡只读EPC（GEN 2）协议下的标签，除读取默认EPC区12字节数据外可读取另外区域的数据（选择该类别时，可在高级参数中设置读取其他区的数据的位置长度， 最大12字节）；
+5.	ISO18000-6B + EPC（GEN 2）： 可读ISO18000-6B协议和EPC（GEN 2）协议标签；
+</value>
+  </data>
+  <data name="grbOutputMode.ToolTip" xml:space="preserve">
+    <value>通讯方式：通讯方式包括7项：RS232、RS485、TCPIP、CANBUS、Syris、Wiegand26及Wiegand34；
+1.	RS232： 串口通讯方式，直接连接PC机串口；点对点通讯方式； 
+2.	RS485： 串口通讯方式，直接连接PC机串口；点对多通讯方式； 
+3.	TCPIP： 网络通讯方式，通过局域网或广域网与PC机通讯； 
+4.	CANBUS： 总线通讯方式，点对多通讯方式；
+5.	Syris： 台湾Syris控制器协议通讯方式； 
+6.	Wiegand26： 标准读卡器通讯方式，单向通讯方式；
+7.	Wiegand34： 标准读卡器通讯方式，单向通讯方式；
+</value>
+  </data>
+  <data name="cmbOutputMode.ToolTip" xml:space="preserve">
+    <value>通讯方式：通讯方式包括7项：RS232、RS485、TCPIP、CANBUS、Syris、Wiegand26及Wiegand34；
+1.	RS232： 串口通讯方式，直接连接PC机串口；点对点通讯方式； 
+2.	RS485： 串口通讯方式，直接连接PC机串口；点对多通讯方式； 
+3.	TCPIP： 网络通讯方式，通过局域网或广域网与PC机通讯； 
+4.	CANBUS： 总线通讯方式，点对多通讯方式；
+5.	Syris： 台湾Syris控制器协议通讯方式； 
+6.	Wiegand26： 标准读卡器通讯方式，单向通讯方式；
+7.	Wiegand34： 标准读卡器通讯方式，单向通讯方式；
+</value>
+  </data>
+  <data name="grbWorkMode.ToolTip" xml:space="preserve">
+    <value>工作模式：工作方式包括3项：主动发送数据，被动发送数据及应答方式；
+1.	主动发送数据：读卡器持续读卡，并将每次读到的卡号通过通讯接口主动上送卡号（应用于主动数据上传）；
+2.	被动发送数据：读卡器持续读卡，将每次读到的卡号保存在读卡器存储器中，不上送卡号，最大存储100条卡号（应用于被动数据上传）；
+3.	应答方式：读卡器不读卡，读写器根据不同的命令来做不同等响应，比如PC机发送一个识别卡的命令，读写器就读卡一次，并将读到的卡号通过通讯接口回复给PC机； （应用于近距离读写卡，测试）
+</value>
+  </data>
+  <data name="cmbWorkMode.ToolTip" xml:space="preserve">
+    <value>工作模式：工作方式包括3项：主动发送数据，被动发送数据及应答方式；
+1.	主动发送数据：读卡器持续读卡，并将每次读到的卡号通过通讯接口主动上送卡号（应用于主动数据上传）；
+2.	被动发送数据：读卡器持续读卡，将每次读到的卡号保存在读卡器存储器中，不上送卡号，最大存储100条卡号（应用于被动数据上传）；
+3.	应答方式：读卡器不读卡，读写器根据不同的命令来做不同等响应，比如PC机发送一个识别卡的命令，读写器就读卡一次，并将读到的卡号通过通讯接口回复给PC机； （应用于近距离读写卡，测试）
+</value>
+  </data>
+  <metadata name="colID.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colAddress.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colHexCard.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colTime.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="colCount.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="stsbar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="tmrClock.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>104, 17</value>
+  </metadata>
+  <metadata name="tmrWrite.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>302, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>54</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAMDAAAAEACACoDgAAFgAAACgAAAAwAAAAYAAAAAEACAAAAAAAAAkAAAAAAAAAAAAAAAEAAAAB
+        AAAAAAAAMzMzADY1NQA5NzcAOTk5AD04OAA9PT0AQDo6AEA/PwBFPDwASz8/ADk3RAA8OUYANDt0AEJC
+        QgBFRUUATkFBAEhHRwBNR0cASUlJAE5OTgBRQkIAUUdHAFVERABYRkYAXEdHAF9JSQBdTk4AUVFRAFVV
+        VQBYWFgAX1tbAF1dXQBjS0sAZk1NAGpOTgBgVFQAbVBQAGNbWwBlWVkAYVxcAGZcXABsX18AcVJSAHRU
+        VAB5VVUAf1lZAGFhYQBlZWUAbmFhAGlpaQBsa2sAbW1tAHNkZABxaWkAcXFxAHR0dAB6cnIAeXl5AH19
+        fQCCW1sAhlxcAIleXgCIY2MAjWBgAI5mZgCKaWkAkWJiAJZlZQCQaGgAmWpqAJ51dQCTeHgAmHt7AKN1
+        dQCsf38AKTiLABw4twAjOaUAFjbCAA002gAINOcABDPzAAAz/wCBgYEAhIODAIWFhQCLhYUAiYmJAI2K
+        igCNjY0AmYGBAJGJiQCViIgAlY+PAJGRkQCVlZUAm5qaAJ+ZmQCenp4ApIyMAK6KigC0iIgApZSUAKmT
+        kwCjmJgAr5ycAL2VlQCxmJgAsp2dALmdnQCioqIApqKiAKWlpQCpo6MAqampAK+qqgCtra0AsaOjALCo
+        qAC8ra0AsbGxALW1tQC6trYAurq6AL29vQDInJwAxKWlANGrqwDBsbEAxrCwAMK1tQDJt7cAxry8AM66
+        ugDLvr4A2bi4AOS5uQDBwcEAxcLCAMXFxQDMxcUAycnJAM7OzgDRwsIA1sLCANHFxQDSzc0A283NANHR
+        0QDV1dUA2traAN7d3QDryckA+s/PAP/NzQDi19cA7NbWAOTa2gDo2NgA9NLSAP3R0QD71tYA/9XVAPXc
+        3AD52toA/9vbAP/f3wDh4eEA5+HhAOXl5QDp4eEA6OjoAO3t7QDz4+MA/+TkAPHq6gD/6uoA/u7uAPHx
+        8QD19fUA//HxAPj19QD/9fUA+fn5AP/5+QD+/v4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        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
+        AAAAAAAAAAAAAAAAAABhdWFgAAAAAAAAAAAAAAAA////////AAD/+D////8AAP/wA////wAA/+AAH///
+        AAD/4AAB//8AAP/gAAAf/wAA/+AAAAP/AAD/4AAAA/8AAP/gAAAD/wAA/+AAAAP/AAD/4AAAA/8AAP/g
+        AAAD/wAA/+AAAAP/AAD/4AAAA/8AAP/gAAAD/wAA/+AAAAP/AAD/4AAAA/8AAP/gAAAD/wAA/+AAAAP/
+        AAD/4AAAA/8AAP/gAAAD/wAA/+AAAAP/AAD/4AAAA/8AAP/gAAAD/wAA/+AAAAP/AAD/4AAAA/8AAP/g
+        AAAD/wAA/+AAAAP/AAD/4AAAA/8AAP/gAAAD/wAA/+AAAAP/AAD/4AAAA/8AAP/gAAAD/wAA/+AAAAP/
+        AAD/4AAAA/8AAP/gAAAD/wAA/+AAAAP/AAD/4AAAA/8AAP/gAAAD/wAA/+AAAAP/AAD/4AAAA/8AAP/g
+        AAAD/wAA/+AAAAP/AAD/4AAAA/8AAP/8AAAD/wAA///4AAP/AAD////AB/8AAP////8P/wAA
+</value>
+  </data>
+</root>

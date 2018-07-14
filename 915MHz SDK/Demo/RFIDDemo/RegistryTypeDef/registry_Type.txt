@@ -1,0 +1,40 @@
+0	Version				NULL		uint8		ver
+1	F/W				NULL		uint8		date[3]
+2	Band				NULL		uint8		region
+							uint8		cur_ch
+							uint8		cur_ch_ext
+3	Tx				NULL		int16		max_power
+							int16		min_Power
+							int16		cur_Power
+4	FH/LBT				NULL		uint16		tx_on_time
+							uint16		tx_off_time
+							uint16		sense_time
+							int16		lbt_rf_level
+							uint8		fh_enable
+							uint8		lbt_enable
+							uint8		cw_enable
+5	anti-collision			NULL		uint8		mode
+6	modulation			NULL		uint8		mode
+7	query				NULL		uint8		q
+8	FH_table			NULL		uint8		size
+							uint8		table[50]
+9	POWER_TABLE			NULL		uint8		size
+							uint16		Power[ModuleTableSize]
+10	Power_Offset			NULL		int16		Value
+11	FeedbackParamter		NULL		uint8		txLPF
+							uint8		FB_RES1
+							uint8		FB_RES2
+12	PartNumber			NULL		uint8		Value
+13	Dev				NULL		uint8		dev
+14	F/W_Version			NULL		uint8		ver[30]
+15	MP_Information			NULL		uint8		data[50]
+16	Reg_Update			NULL		uint8		count
+17	RSSI_Offset			NULL		uint16		Value
+							uint16		reserv
+18	Cutsom_Value			NULL		uint8		bp[28]
+							uint16		addr
+
+
+
+
+

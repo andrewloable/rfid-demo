@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>RFRM</ProjectName>
+    <ProjectGuid>{5EA6C509-4F7C-411E-9EC3-B3E891C20AF2}</ProjectGuid>
+    <RootNamespace>RFRM</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.23107.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\techwin_rfid_sdk_src\include;..\..\..\include;..\..\..\include\windows;..\..\..\techwin_rfid_sdk_src\include\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;STANDARDSHELL_UI_MODEL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\techwin_rfid_sdk_src\include;..\..\..\include;..\..\..\include\windows;..\..\..\techwin_rfid_sdk_src\include\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;STANDARDSHELL_UI_MODEL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\techwin_rfid_sdk_src\include;..\..\..\include;..\..\..\include\windows;..\..\..\techwin_rfid_sdk_src\include\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;STANDARDSHELL_UI_MODEL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\techwin_rfid_sdk_src\include;..\..\..\include;..\..\..\include\windows;..\..\..\techwin_rfid_sdk_src\include\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;STANDARDSHELL_UI_MODEL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\AlgorithmSetPage.cpp" />
+    <ClCompile Include="..\AntennaEditDlg.cpp" />
+    <ClCompile Include="..\AntennaSetPage.cpp" />
+    <ClCompile Include="..\AThread.cpp" />
+    <ClCompile Include="..\Buffer.cpp" />
+    <ClCompile Include="..\ComboInListView.cpp" />
+    <ClCompile Include="..\CountDlg.cpp" />
+    <ClCompile Include="..\EngineeringSetPage.cpp" />
+    <ClCompile Include="..\FirmwareUpdate.cpp" />
+    <ClCompile Include="..\FirmwareUpdateOptionDlg.cpp" />
+    <ClCompile Include="..\FirmwareUpdateStatusDlg.cpp" />
+    <ClCompile Include="..\FlatSplitterWnd.cpp" />
+    <ClCompile Include="..\FrequencyBand.cpp" />
+    <ClCompile Include="..\FrequencyBandList.cpp" />
+    <ClCompile Include="..\FrequencyBandPage.cpp" />
+    <ClCompile Include="..\GeneralSetPage.cpp" />
+    <ClCompile Include="..\HeaderCtrlEx.cpp" />
+    <ClCompile Include="..\IconPropertyPage.cpp" />
+    <ClCompile Include="..\IconPropertySheet.cpp" />
+    <ClCompile Include="..\intel_list.cpp" />
+    <ClCompile Include="..\intel_stack.cpp" />
+    <ClCompile Include="..\intel_utility.cpp" />
+    <ClCompile Include="..\InterfaceDlg.cpp" />
+    <ClCompile Include="..\KillTagAccessDlg.cpp" />
+    <ClCompile Include="..\ListCtrlEx.cpp" />
+    <ClCompile Include="..\ListViewEx.cpp" />
+    <ClCompile Include="..\LockTagAccessDlg.cpp" />
+    <ClCompile Include="..\MainFrm.cpp" />
+    <ClCompile Include="..\mapfile.cpp" />
+    <ClCompile Include="..\Mapping.cpp" />
+    <ClCompile Include="..\MemMapControl.cpp" />
+    <ClCompile Include="..\MenuEx.cpp" />
+    <ClCompile Include="..\MessageView.cpp" />
+    <ClCompile Include="..\OperationMode.cpp" />
+    <ClCompile Include="..\PostSingulationSetPage.cpp" />
+    <ClCompile Include="..\ReaderSetSheet.cpp" />
+    <ClCompile Include="..\ReadTagAccessDlg.cpp" />
+    <ClCompile Include="..\RFIDRadio.cpp" />
+    <ClCompile Include="..\RFIDRadioManager.cpp" />
+    <ClCompile Include="..\RFRM.cpp" />
+    <ClCompile Include="..\RFRMDoc.cpp" />
+    <ClCompile Include="..\RFRMView.cpp" />
+    <ClCompile Include="..\SelectCriteriaSetPage.cpp" />
+    <ClCompile Include="..\ServerIPDlg.cpp" />
+    <ClCompile Include="..\SocketClass.cpp" />
+    <ClCompile Include="..\SortClass.cpp" />
+    <ClCompile Include="..\SpinButtonCtrlEx.cpp" />
+    <ClCompile Include="..\SplashWnd.cpp" />
+    <ClCompile Include="..\SplitterWndEx.cpp" />
+    <ClCompile Include="..\StatusBarEx.cpp" />
+    <ClCompile Include="..\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\TagInfo.cpp" />
+    <ClCompile Include="..\TagPtrList.cpp" />
+    <ClCompile Include="..\ThemeHelperEx.cpp" />
+    <ClCompile Include="..\ToolBarEx.cpp" />
+    <ClCompile Include="..\Util.cpp" />
+    <ClCompile Include="..\WaveBox.cpp" />
+    <ClCompile Include="..\WriteTagAccessDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\AlgorithmSetPage.h" />
+    <ClInclude Include="..\AntennaEditDlg.h" />
+    <ClInclude Include="..\AntennaSetPage.h" />
+    <ClInclude Include="..\AThread.h" />
+    <ClInclude Include="..\Buffer.h" />
+    <ClInclude Include="..\ComboInListView.h" />
+    <ClInclude Include="..\CountDlg.h" />
+    <ClInclude Include="..\EngineeringSetPage.h" />
+    <ClInclude Include="..\FirmwareUpdate.h" />
+    <ClInclude Include="..\FirmwareUpdateOptionDlg.h" />
+    <ClInclude Include="..\FirmwareUpdateStatusDlg.h" />
+    <ClInclude Include="..\FlatSplitterWnd.h" />
+    <ClInclude Include="..\FrequencyBand.h" />
+    <ClInclude Include="..\FrequencyBandList.h" />
+    <ClInclude Include="..\FrequencyBandPage.h" />
+    <ClInclude Include="..\GeneralSetPage.h" />
+    <ClInclude Include="..\HeaderCtrlEx.h" />
+    <ClInclude Include="..\IconPropertyPage.h" />
+    <ClInclude Include="..\IconPropertySheet.h" />
+    <ClInclude Include="..\intel_list.h" />
+    <ClInclude Include="..\intel_stack.h" />
+    <ClInclude Include="..\intel_utility.h" />
+    <ClInclude Include="..\InterfaceDlg.h" />
+    <ClInclude Include="..\KillTagAccessDlg.h" />
+    <ClInclude Include="..\ListCtrlEx.h" />
+    <ClInclude Include="..\ListViewEx.h" />
+    <ClInclude Include="..\LockTagAccessDlg.h" />
+    <ClInclude Include="..\MainFrm.h" />
+    <ClInclude Include="..\mapfile.h" />
+    <ClInclude Include="..\Mapping.h" />
+    <ClInclude Include="..\MemMapControl.h" />
+    <ClInclude Include="..\MenuEx.h" />
+    <ClInclude Include="..\MessageView.h" />
+    <ClInclude Include="..\OperationMode.h" />
+    <ClInclude Include="..\PostSingulationSetPage.h" />
+    <ClInclude Include="..\ReaderSetSheet.h" />
+    <ClInclude Include="..\ReadTagAccessDlg.h" />
+    <ClInclude Include="..\Resource.h" />
+    <ClInclude Include="..\RFIDRadio.h" />
+    <ClInclude Include="..\RFIDRadioManager.h" />
+    <ClInclude Include="..\RFRM.h" />
+    <ClInclude Include="..\RFRMDoc.h" />
+    <ClInclude Include="..\RFRMView.h" />
+    <ClInclude Include="..\SelectCriteriaSetPage.h" />
+    <ClInclude Include="..\ServerIPDlg.h" />
+    <ClInclude Include="..\SocketClass.h" />
+    <ClInclude Include="..\SortClass.h" />
+    <ClInclude Include="..\SpinButtonCtrlEx.h" />
+    <ClInclude Include="..\SplashWnd.h" />
+    <ClInclude Include="..\SplitterWndEx.h" />
+    <ClInclude Include="..\StatusBarEx.h" />
+    <ClInclude Include="..\stdafx.h" />
+    <ClInclude Include="..\TagInfo.h" />
+    <ClInclude Include="..\TagPtrList.h" />
+    <ClInclude Include="..\ThemeHelperEx.h" />
+    <ClInclude Include="..\ToolBarEx.h" />
+    <ClInclude Include="..\Util.h" />
+    <ClInclude Include="..\VersionInfo.h" />
+    <ClInclude Include="..\WaveBox.h" />
+    <ClInclude Include="..\WriteTagAccessDlg.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\res\bitmap8.bmp" />
+    <Image Include="..\res\bmp00001.bmp" />
+    <Image Include="..\res\Cmdbar.bmp" />
+    <Image Include="..\res\Cmdbar_color.bmp" />
+    <Image Include="..\res\Cmdbar_color_32.bmp" />
+    <Image Include="..\res\Cmdbar_gray.bmp" />
+    <Image Include="..\res\Cmdbar_gray_32.bmp" />
+    <Image Include="..\res\folders.bmp" />
+    <Image Include="..\res\ImageList.bmp" />
+    <Image Include="..\res\RFRM.ico" />
+    <Image Include="..\res\RFRMDoc.ico" />
+    <Image Include="..\res\splash_wnd.bmp" />
+    <Image Include="..\res\Tab_icon 108x36.bmp" />
+    <Image Include="..\res\Tab_icon 32x16.bmp" />
+    <Image Include="..\res\Tab_icon 48x16.bmp" />
+    <Image Include="..\res\Tab_icon 72x36.bmp" />
+    <Image Include="..\res\tagaccess_color_32.bmp" />
+    <Image Include="..\res\tagaccess_gray_32.bmp" />
+    <Image Include="..\res\Tag_icon 16x16.bmp" />
+    <Image Include="..\res\Tag_icon 24x24.bmp" />
+    <Image Include="..\res\Tag_icon 36x36.bmp" />
+    <Image Include="..\res\toolbar1.bmp" />
+    <Image Include="..\res\toolbar1_color_16.bmp" />
+    <Image Include="..\res\toolbar1_color_32.bmp" />
+    <Image Include="..\res\toolbar1_gray_16.bmp" />
+    <Image Include="..\res\toolbar1_gray_32.bmp" />
+    <Image Include="res\Cmdbar.bmp" />
+    <Image Include="res\ImageList.bmp" />
+    <Image Include="res\RFRM.ico" />
+    <Image Include="res\RFRMDoc.ico" />
+    <Image Include="res\splash_wnd.bmp" />
+    <Image Include="res\Tag_icon 16x16.bmp" />
+    <Image Include="res\Tag_icon 24x24.bmp" />
+    <Image Include="res\Tag_icon 36x36.bmp" />
+    <Image Include="res\Tag_icon 48x48.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\RFRM.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\RFRM.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="\Samsung Techwin RFID Reader Management System\Samsung Techwin Reader Manager\c++\1.1.1.9\rfrm\rfrm\RFRM.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
